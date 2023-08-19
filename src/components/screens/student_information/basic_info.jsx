@@ -38,10 +38,12 @@ const Basic_Info = () => {
 
           <div className="flex flex-col justify-evenly items-center lg:flex-row lg:flex-wrap lg:justify-between">
             {names.map(({ name, value, id }) => (
-              <div key={id} className="w-full  mt-4 lg:w-1/2 lg:flex lg:justify-end ">
+              <div
+                className="w-full  mt-4 lg:w-1/2 lg:flex lg:justify-end "
+                key={id}
+              >
                 <Input
                   label={name}
-                  key={id}
                   className={
                     " w-full  rounded p-2 outline-none border-none  bg-gray-300 mt-3 text-black lg:w-11/12 "
                   }
@@ -52,8 +54,8 @@ const Basic_Info = () => {
         </section>
 
         {/* Image section */}
-        <section className="w-full lg:w-1/4 " >
-        <Edit_Profile/>
+        <section className="w-full lg:w-1/4 ">
+          <Edit_Profile />
         </section>
       </div>
     </>

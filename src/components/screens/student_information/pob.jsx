@@ -26,7 +26,6 @@ const POB = () => {
         {pob.map(({ name, value }) => (
           <div key={name} className="w-full mt-2 lg:w-2/5  ">
             <Input
-              key={name}
               direction={"flex-col-reverse"}
               align={"text-center "}
               marginTop={"mt-1"}
