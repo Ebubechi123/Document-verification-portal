@@ -8,8 +8,8 @@ const Studen_Information_Form = () => {
   const [steps, setSteps] = useState(0);
   const noOfSteps = 2;
   const components = [
-    <Step_One steps={steps} setSteps={setSteps} noOfSteps={noOfSteps} />,
-    <Step_Two steps={steps} setSteps={setSteps} noOfSteps={noOfSteps} />,
+    <Step_One key="step-one" steps={steps} setSteps={setSteps} noOfSteps={noOfSteps} />,
+    <Step_Two key="step-two" steps={steps} setSteps={setSteps} noOfSteps={noOfSteps} />,
   ];
   return (
     <>
